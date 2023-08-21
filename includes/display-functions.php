@@ -66,7 +66,7 @@ class SWS_Display_Functions
      */
     private function render_starships_table($starships)
     {
-        $output = '<div class="d-flex justify-content-center">';
+        $output = '<div class="d-flex justify-content-center mt-5">';
         $output .= '<table id="sws-starships-table" class="display cell-border table-bordered  table table-striped">';
         $output .= '<thead>';
         $output .= '<tr>';
