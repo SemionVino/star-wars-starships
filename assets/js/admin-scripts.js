@@ -1,7 +1,10 @@
 jQuery(document).ready(function($) {
-    console.log('nigga');
+     // Add custom class to the menu item based on its link (href attribute)
+     $('#adminmenu a[href="admin.php?page=sws_starships"]').closest('li').addClass('menu-icon-starships');
+
     $('form').on('submit', function(e) {
         e.preventDefault();
+        $('#result').text('')
         const formData = $(this).serialize();
         $.post(
             sws_ajax_object.ajax_url,
@@ -11,7 +14,7 @@ jQuery(document).ready(function($) {
                 data: formData
             },
             function(response) {
-                alert(response.data.message);
+                $('#result').text(response.data.message)
             }
         );
     });

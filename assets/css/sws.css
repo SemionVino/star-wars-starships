@@ -1,3 +1,35 @@
 #sws-starships-table_wrapper{
-    max-width: 1000px;
+    max-width: 1200px;
+    margin: 0 auto !important;
+}
+#sws-starships-table tr:last-child td:first-child{
+    border-radius: 0 0 0 10px
+}
+#sws-starships-table tr:last-child td:last-child{
+    border-radius: 0 0 10px 0
+}
+#sws-starships-table thead tr th:first-child{
+    border-radius: 10px 0 0 0;
+}
+#sws-starships-table thead tr th:last-child{
+    border-radius: 0 10px 0 0;
+}
+#sws-starships-table{
+    border-bottom: 0;
+}
+#sws-starships-table tr{
+    border-bottom: 1px solid #80808066;
+}
+#sws-starships-table th {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; 
+}
+.admin-bar #sws-starships-table th{
+    top: 32px;
+
+}
+#sws-starships-table_filter{
+    margin-bottom: 20px;
 }

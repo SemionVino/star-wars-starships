@@ -5,10 +5,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class SWS_API_Handler {
 
- 
+    /**
+     * The base URL for the Star Wars API.
+     */
     private $api_url = 'https://swapi.dev/api/starships/';
 
-
+    /**
+     * Fetch starships data from the Star Wars API.
+     *
+     * @return array|WP_Error Starships data or WP_Error on failure.
+     */
     public function fetch_starships() {
         $response = wp_remote_get( $this->api_url );
 
@@ -26,7 +32,12 @@ class SWS_API_Handler {
         return $data['results'];
     }
 
-  
+    /**
+     * Get specific details of each starship.
+     *
+     * @param array $starship Full starship data.
+     * @return array Filtered details.
+     */
     public function get_starship_details( $starship ) {
         return array(
             'name'            => $starship['name'],
