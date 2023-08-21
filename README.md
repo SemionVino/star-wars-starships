@@ -1,7 +1,5 @@
 # Star Wars Starships WordPress Plugin
 
-![Star Wars Starships Logo]
-
 A WordPress plugin that lists all the Star Wars starships in your admin panel, fetched from the Star Wars API.
 
 ## Description
