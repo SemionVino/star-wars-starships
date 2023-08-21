@@ -29,7 +29,7 @@ class SWS_Display_Functions
     {
         $selected_page_id = get_option('sws_selected_page');
 
-        if (is_page($selected_page_id)) {
+        if ($selected_page_id && is_page($selected_page_id)) {
             $starships = $this->api_handler->fetch_starships();
 
             if (!is_wp_error($starships)) {

@@ -1,5 +1,4 @@
-
-.toplevel_page_sws-settings .wp-menu-image {
-    background: url('../images/stormtrooper.png') no-repeat center center;
-    background-size: 20px 20px; /* Adjust size if needed */
+.toplevel_page_sws-settings .wp-menu-image.dashicons-before:not([class*=" dashicons-"]:not(.dashicons-before)) {
+  background: url("../images/stormtrooper.png") no-repeat center center;
+  background-size: 20px 20px; /* Adjust size if needed */
 }
